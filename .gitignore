@@ -1,0 +1,10 @@
+# local tooling, not part of the site
+.claude/
+
+# OS cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# private notes, not for the public repo
+README.md
