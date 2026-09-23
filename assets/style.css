@@ -295,14 +295,17 @@ strong { font-weight: 600; }
 /* portrait masked into a pointed arch */
 .about-side .portrait {
   width: 100%;
+  /* the source photo is only 266px wide; never scale it past that or it goes soft */
+  max-width: 266px;
   aspect-ratio: 4 / 5;
   object-fit: cover;
-  object-position: center 22%;
+  object-position: center 20%;
   background: var(--surface);
   border-radius: 48% 48% 5px 5px / 38% 38% 5px 5px;
   border: 1px solid var(--rule);
+  outline: 1px solid var(--accent-2);
+  outline-offset: -7px;
   padding: 6px;
-  box-shadow: inset 0 0 0 1px var(--accent-2);
 }
 
 /* ---------- key/value lists ---------- */
